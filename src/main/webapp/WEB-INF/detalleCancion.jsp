@@ -24,5 +24,11 @@
     
     <br>
     <a href="/canciones">Volver al catálogo</a>
+	<br><br>
+	    <a href="/canciones/formulario/editar/${cancion.id}">
+	        <button type="button">Editar Canción</button>
+	    </a>
+
+	</html>
 </body>
 </html>

@@ -26,8 +26,7 @@
                         <a href="/canciones/detalle/${item.id}">Ver Detalle</a>
                     </td>
                 </tr>
-            </c:forEach>
-        </tbody>
+            </c:forEach></tbody>
     </table>
 	<br><br>
 	    <a href="/canciones/formulario/agregar/0">

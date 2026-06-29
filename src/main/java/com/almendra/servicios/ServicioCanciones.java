@@ -9,12 +9,20 @@ import com.almendra.repositorios.RepositorioCanciones;
 @Service
 public class ServicioCanciones {
 
+
     private final RepositorioCanciones repoCanciones;
 
+  
     public ServicioCanciones(RepositorioCanciones repoCanciones) {
         this.repoCanciones = repoCanciones;
     }
 
+    
+    public Cancion actualizaCancion(Cancion cancion) {
+        return repoCanciones.save(cancion);
+    }
+
+   
     public List<Cancion> obtenerTodasLasCanciones() {
         return repoCanciones.findAll();
     }
@@ -27,7 +35,6 @@ public class ServicioCanciones {
             return null;
         }
     }
-
    
     public Cancion agregarCancion(Cancion cancion) {
         return repoCanciones.save(cancion);

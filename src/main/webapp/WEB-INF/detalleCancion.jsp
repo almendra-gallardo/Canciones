@@ -28,7 +28,12 @@
 	    <a href="/canciones/formulario/editar/${cancion.id}">
 	        <button type="button">Editar Canción</button>
 	    </a>
-
+       
+		<form action="/canciones/eliminar/${cancion.id}" method="POST" style="display:inline;">
+		    <button type="submit" onclick="return confirm('¿Estás seguro de que deseas eliminar esta canción?');">
+		        Eliminar Canción
+		    </button>
+		</form>
 	</html>
 </body>
 </html>

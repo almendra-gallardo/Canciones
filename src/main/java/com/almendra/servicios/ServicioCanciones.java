@@ -39,4 +39,7 @@ public class ServicioCanciones {
     public Cancion agregarCancion(Cancion cancion) {
         return repoCanciones.save(cancion);
     }
+    public void eliminaCancion(Long id) {
+        repoCanciones.deleteById(id);
+    }
 }
